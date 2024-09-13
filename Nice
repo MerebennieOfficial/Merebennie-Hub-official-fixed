@@ -1,0 +1,31 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Merebennie Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Merebennie Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "Main 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab2:AddButton({
+	Name = "Auto Parry",
+	Callback = function()
+        repeat wait(5) until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/Test/main/Test?token=GHSAT0AAAAAACW4LVMDHK67AO4B47PXQCMYZW72ILQ"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Manual Spam",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/Manualspam/main/Manualspam"))()
+  	end    
+})
+
